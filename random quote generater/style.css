@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content {
+    margin: 35px 0;
+}
+
+.are {
+    display: flex;
+    justify-content: center;
+}
+
+.are i:first-child {
+    margin: 3px 10px 0 0;
+}
+
+.are i:last-child {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+
+.are i {
+    font-size: 15px;
+
+}
+
+.are .qoute {
+    font-size: 22px;
+    text-align: center;
+}
+
+.author {
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.author span:first-child {
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+
+.box .buttons {
+    border-top: 1px solid #ccc;
+}
+
+.buttons .features {
+    display: flex;
+    align-items: center;
+    margin-top: 20px !important;
+    justify-content: space-between;
+}
+
+.features ul {
+    display: flex;
+}
+
+.features ul li {
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    cursor: pointer;
+    color: #5372F0;
+    list-style: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #5372F0;
+    transition: all 0.3s ease;
+}
+
+.features button {
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: #5372F0;
+}
+
+ul li:is(:hover, .active) {
+    color: #fff;
+    background: #5372F0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    min-height: 84vh;
+    background: linear-gradient(to bottom right, #3f78e9 0%, #d0fafa 100%);
+}
+
+.box {
+    width: 605px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+}
+@media only screen and (max-width: 600px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1.5rem;
+        background: rgb(17, 80, 139);
+        color: white;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+        height: 63px !important;
+      }
+  }
